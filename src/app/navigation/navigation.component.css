@@ -1,0 +1,531 @@
+/*===============================================*/
+/* 02. NAV BAR  	 							 */
+/*===============================================*/
+#nav-header{
+  position:relative;
+  z-index:1000;
+}
+
+#nav-bar{
+  position:relative;
+  height:90px;
+  width:100%;
+  z-index:1000;
+}
+
+#nav-bar.hide-first{
+  visibility:hidden;
+}
+
+/* ----------------------------------------------*/
+/* 02.1 Width & Color 							 */
+/* ----------------------------------------------*/
+
+/* 02.1.1 Fixed-width 							 */
+/* ----------------------------------------------*/
+#nav-bar.fixed-width #nav-wrapper{
+  position:relative;
+  height:inherit;
+  width:1170px;
+  margin:0 auto;
+  padding:0 30px;
+}
+
+/* 02.1.2 Fluid-width 							 */
+/* ----------------------------------------------*/
+#nav-bar.fluid-width #nav-wrapper{
+  position:relative;
+  height:inherit;
+  width:100%;
+  padding:0 100px;
+}
+
+/* 02.1.3 Top Bar 								 */
+/* ----------------------------------------------*/
+#nav-bar.top-bar{
+  position:absolute;
+  /*background-color:transparent;*/
+  margin:auto;
+  left:0;
+  right:0;
+}
+
+#nav-bar.top-bar.stick-it{
+  position:fixed;
+  height:90px;
+  width:100%;
+  background-color:#FFF;
+  z-index:1500;
+  visibility:visible;
+  /*-webkit-transform: translateZ(0);*/
+}
+
+/* 02.1.4 Bottom Bar 							 */
+/* ----------------------------------------------*/
+#nav-bar.bottom-bar.inside{
+  position:absolute;
+  /*background-color:transparent;*/
+  bottom:0;
+}
+
+/*#nav-bar.bottom-bar.outside{
+	position:relative;
+}*/
+
+#nav-bar.bottom-bar.stick-it{
+  position:fixed;
+  height:90px;
+  width:100%;
+  background-color:#FFF;
+  z-index:1500;
+  top:0;
+  bottom:auto;
+  /*-webkit-transform: translateZ(0)*/
+
+}
+
+/* 02.1.5 Transparent & Block Color 			 */
+/* ----------------------------------------------*/
+#nav-bar.transparent{
+  /*position:relative;*/
+  background-color:transparent;
+}
+
+#nav-bar.block-color{
+  /*position:relative; */
+  background-color:#FFF;
+}
+
+/*.is-sticky #nav-bar.block-color{
+	-webkit-transform: translateZ(0)
+}*/
+
+/* ----------------------------------------------*/
+/* 02.2 Logo & Nav Position						 */
+/* ----------------------------------------------*/
+
+.logo-wrapper{
+  position:relative;
+  width:60px;
+  height:60px;
+  margin-top:15px;
+}
+
+#nav-menu{
+  list-style-type:none;
+  margin:0;
+  padding:25px 0 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size:14px;
+  letter-spacing:1px;
+  z-index:1000;
+}
+
+/* 02.2.1 Nav Center 							 */
+/* ----------------------------------------------*/
+#nav-bar.nav-center .logo-wrapper{
+  position:absolute;
+  margin:auto;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+#nav-bar.nav-center.hide-logo-on-desktop .logo-wrapper{
+  display:none
+}
+
+#nav-bar.nav-center #nav-menu{
+  text-align:center;
+}
+
+/* 02.2.2 Nav Left 								 */
+/* ----------------------------------------------*/
+#nav-bar.nav-left .logo-wrapper{
+  float:right;
+}
+
+#nav-bar.nav-left #nav-menu{
+  float:left;
+  text-align:left;
+  width:90%;
+}
+
+/* 02.2.3 Nav Right 							 */
+/* ----------------------------------------------*/
+#nav-bar.nav-right .logo-wrapper{
+  float:left;
+}
+
+#nav-bar.nav-right #nav-menu{
+  float:right;
+  text-align:right;
+  width:90%;
+}
+
+
+/*===============================================*/
+/* 03. NAV MENU	 	 							 */
+/*===============================================*/
+
+/* ----------------------------------------------*/
+/* 03.1 Parent Menu								 */
+/* ----------------------------------------------*/
+#nav-menu > li{
+  position:relative;
+  display:inline;
+}
+
+/*#nav-menu > li:before{
+  	font-family: "fontello";
+  	font-style: normal;
+  	font-weight: normal;
+  	font-size:10px;
+	content: '\e9bd';
+	color:#f98d8a;
+	text-align:center;
+}
+
+#nav-menu > li.first-child:before{
+	content: "";
+	margin-left: 0;
+}*/
+
+#nav-menu > li a{
+  color:#666;
+  text-decoration:none;
+}
+
+#nav-menu > li > a{
+  display:inline-block;
+  padding:6px 11px;
+  margin:0 8px;
+  border:solid transparent 1px;
+  border-radius:5px;
+}
+
+#nav-menu > li > a:hover,
+#nav-menu > li > a.active{
+  /*color:#f98d8a;*/
+  border-color:#b3b3b3;
+}
+
+/* 03.1.1 Transparent 							 */
+/* ----------------------------------------------*/
+.transparent #nav-menu > li > a{
+  color:#FFF;
+}
+
+.transparent #nav-menu > li > a:hover,
+.transparent #nav-menu > li > a.active{
+  color:#FFF;
+  border-color:#FFF;
+}
+
+.transparent.stick-it #nav-menu > li > a{
+  color:#666
+}
+
+.transparent.stick-it #nav-menu > li > a:hover,
+.transparent.stick-it #nav-menu > li > a.active{
+  border-color:#b3b3b3;
+}
+
+/* 03.1.2 Additional Class For Nav Center 		 */
+/* ----------------------------------------------*/
+.nav-center .first-child-margin{
+  margin-left:0px;
+}
+
+.nav-center .last-child-margin{
+  margin-right:15px;
+}
+
+.nav-center .split-margin{
+  margin-left:100px;
+}
+
+.nav-center.hide-logo-on-desktop .first-child-margin,
+.nav-center.hide-logo-on-desktop .last-child-margin,
+.nav-center.hide-logo-on-desktop .split-margin{
+  margin:0
+}
+
+/* ----------------------------------------------*/
+/* 03.2 Child Menu								 */
+/* ----------------------------------------------*/
+#nav-menu ul{
+  position:absolute;
+  display:none;
+  width:250px;
+  left:8px;
+  list-style-type:none;
+  padding:30px 0 0 0;
+  text-align:left;
+  font-weight:400;
+  letter-spacing:0;
+}
+
+#nav-menu li:hover > ul{
+  display:block;
+}
+
+#nav-menu ul li{
+  position:relative;
+  width:100%;
+}
+
+#nav-menu ul li a{
+  display:block;
+  width:100%;
+  margin:0px;
+  border-radius:0;
+  border:solid thin #dcdcdc;
+  border-bottom:none;
+  padding:18px 20px;
+  background-color:#FFF;
+}
+
+#nav-menu ul li:first-child a{
+  border-radius:3px 3px 0 0;
+}
+
+#nav-menu ul li:last-child a{
+  border-radius:0 0 3px 3px;
+}
+
+
+#nav-menu ul li a:hover,
+#nav-menu ul li a.active{
+  color:#f98d8a;
+}
+
+/* 03.2.1 Transparent Child						 */
+/* ----------------------------------------------*/
+.transparent #nav-menu ul{
+  padding:25px 0 0 0;
+}
+
+.transparent.stick-it #nav-menu ul{
+  padding:30px 0 0 0;
+}
+
+.transparent #nav-menu ul li a{
+  color:#666;
+}
+
+.transparent #nav-menu ul li a:hover,
+.transparent #nav-menu ul li a.active{
+  color:#f98d8a;
+}
+
+/* 03.2.2 Child-Parent Arrow 					 */
+/* ----------------------------------------------*/
+#nav-menu li > ul li a:after {
+  content: '>';
+  position:absolute;
+  right:15px;
+}
+
+#nav-menu li > ul li a:only-child:after {
+  content: '';
+}
+
+/* 03.2.3 More Child 						  	 */
+/* ----------------------------------------------*/
+#nav-menu ul ul{
+  top:0;
+  left:100%;
+  padding:0 0 0 5px !important;
+  border:none;
+}
+
+#nav-menu ul ul.on-left{
+  left:-100%;
+}
+
+#nav-menu ul ul.move1-to-top{
+  top:-100%;
+}
+
+#nav-menu ul ul.move2-to-top{
+  top:-200%;
+}
+
+#nav-menu ul ul.move3-to-top{
+  top:-300%;
+}
+
+#nav-menu ul ul.move4-to-top{
+  top:-400%;
+}
+
+#nav-menu ul ul.move5-to-top{
+  top:-500%;
+}
+
+/* ----------------------------------------------*/
+/* 03.3 Mobile Nav								 */
+/* ----------------------------------------------*/
+#mobile-nav{
+  display:none;
+}
+
+#mobile-nav,
+.transparent.stick-it #mobile-nav{
+  color:#666;
+}
+
+.transparent #mobile-nav{
+  color:#FFF;
+}
+
+
+/*===============================================*/
+/* 05. LOGO	 	 	 							 */
+/*===============================================*/
+
+/* ----------------------------------------------*/
+/* 05.1 Default (Nav) Logo						 */
+/* ----------------------------------------------*/
+.nav-logo{
+  font-family: 'Montserrat', sans-serif;
+  font-size:22px;
+  letter-spacing:2px;
+  font-weight:700;
+  color:#666;
+  text-align:center;
+  padding-top:16px;
+}
+
+.transparent .nav-logo{
+  color:#FFF;
+}
+
+.transparent.stick-it .nav-logo{
+  color:#666;
+}
+
+.nav-logo.rounded{
+  width:100%;
+  height:100%;
+  background-color:#f98d8a;
+  border-radius:50%;
+  font-size:18px;
+  color:#FFF;
+  padding-top:16px
+}
+
+.nav-logo.rounded .theme-color{
+  color:#FFF;
+}
+
+.transparent.stick-it .nav-logo.rounded{
+  color:#FFF;
+}
+
+
+/* ----------------------------------------------*/
+/* 05.2	Wedding Logo							 */
+/* ----------------------------------------------*/
+.logo-scale-wrapper{
+  -ms-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+  -ms-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+
+.wedding-logo{
+  position:relative;
+  width:70px;
+  height:70px;
+  margin:0 auto;
+  margin-bottom:30px;
+}
+
+.transparent .wedding-logo{
+  color:#FFF;
+}
+
+.transparent.stick-it .wedding-logo{
+  color:#666;
+}
+
+.line-1{
+  position:absolute;
+  width:77px;
+  height:5px;
+  top:30px;
+  left:-3px;
+  border-bottom:2px solid #FFF;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.line-2{
+  position:absolute;
+  width:77px;
+  height:5px;
+  top:30px;
+  right:-2px;
+  border-bottom:2px solid #FFF;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.transparent.stick-it .line-1,
+.transparent.stick-it .line-2,
+.block-color .line-1,
+.block-color .line-2{
+  border-color:#666;
+}
+
+.his-initial{
+  position:absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size:18px;
+  top:20px;
+}
+
+.her-initial{
+  position:absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size:18px;
+  top:20px;
+  right:0;
+}
+
+.top-heart{
+  position:absolute;
+  font-family: 'fontello', sans-serif;
+  font-weight:700;
+  font-size:11px;
+  top:2px;
+  left:26px;
+  color:#f98d8a;
+}
+
+.bottom-heart{
+  position:absolute;
+  font-family: 'fontello', sans-serif;
+  font-weight:700;
+  font-size:11px;
+  bottom:2px;
+  left:26px;
+  color:#f98d8a;
+}
+
+/* ----------------------------------------------*/
+/* 05.3	IMG Logo								 */
+/* ----------------------------------------------*/
+.img-logo, .img-logo img{
+  width:100%;
+}

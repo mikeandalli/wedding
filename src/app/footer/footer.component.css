@@ -1,0 +1,26 @@
+/* ----------------------------------------------*/
+/* 13.4 Footer Section				 			 */
+/* ----------------------------------------------*/
+footer .image-divider.fixed-height{
+  height:500px;
+}
+
+#thank{
+  font-family: 'Great Vibes', cursive;
+  font-size:85px;
+}
+
+#you{
+  font-family: 'Great Vibes', cursive;
+  font-size:85px;
+  margin-top:40px;
+  margin-bottom:80px;
+  margin-left:15px
+}
+
+#footer-couplename-wrapper{
+  -ms-transform: scale(0.7, 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+  margin-bottom:50px;
+}

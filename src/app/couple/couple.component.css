@@ -1,0 +1,70 @@
+/* ----------------------------------------------*/
+/* 13.1 Couple Section							 */
+/* ----------------------------------------------*/
+.photo-name{
+  font-family: 'Great Vibes', cursive;
+  font-size:75px;
+  color:#FFF;
+}
+
+.photo-name.his-front-name{
+  margin-left:-45px;
+}
+
+.photo-name.his-last-name{
+  margin-top:30px;
+}
+
+.photo-name.her-front-name{
+  margin-left:-45px;
+}
+
+.photo-name.her-last-name{
+  margin-top:38px;
+}
+
+.couple-excerpt{
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+/* ----------------------------------------------*/
+/* 13.2 Adventure Begin							 */
+/* ----------------------------------------------*/
+#adventure-begin-wrapper{
+  margin-bottom:80px
+}
+
+/* ----------------------------------------------*/
+/* 13.3 The Wedding Section			 			 */
+/* ----------------------------------------------*/
+.wedding-item-wrapper{
+  margin-bottom:40px;
+}
+
+/* ----------------------------------------------*/
+/* 13.4 Footer Section				 			 */
+/* ----------------------------------------------*/
+footer .image-divider.fixed-height{
+  height:500px;
+}
+
+#thank{
+  font-family: 'Great Vibes', cursive;
+  font-size:85px;
+}
+
+#you{
+  font-family: 'Great Vibes', cursive;
+  font-size:85px;
+  margin-top:40px;
+  margin-bottom:80px;
+  margin-left:15px
+}
+
+#footer-couplename-wrapper{
+  -ms-transform: scale(0.7, 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+  margin-bottom:50px;
+}

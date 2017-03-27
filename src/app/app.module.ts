@@ -10,6 +10,10 @@ import { SliderComponent } from './slider/slider.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PlacesComponent } from './places/places.component';
 import { LocationComponent } from './location/location.component';
+import { FooterComponent } from './footer/footer.component';
+import { CoupleComponent } from './couple/couple.component';
+import { StoryComponent } from './story/story.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { LocationComponent } from './location/location.component';
     SliderComponent,
     GalleryComponent,
     PlacesComponent,
-    LocationComponent
+    LocationComponent,
+    FooterComponent,
+    CoupleComponent,
+    StoryComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

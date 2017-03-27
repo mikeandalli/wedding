@@ -1,0 +1,69 @@
+/* ----------------------------------------------*/
+/* 16.1 Our Story Section						 */
+/* ----------------------------------------------*/
+.story-row.row {
+  display: table;
+  padding:50px 0;
+  position:relative;
+}
+
+.story-row.row [class*="col-"] {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.story-date-wrapper{
+  z-index:1;
+}
+
+.story-date{
+  position:relative;
+  height:80px;
+  width:80px;
+  background-color:#f98d8a;
+  border-radius:50%;
+  margin:0 auto;
+}
+
+.story-date .the-month{
+  font-family: 'Montserrat', sans-serif;
+  font-size:14px;
+  line-height:20px;
+  font-weight:400;
+  letter-spacing:1px;
+  color:#FFF;
+  padding-top:16px;
+}
+
+.story-date .the-year{
+  font-family: 'Montserrat', sans-serif;
+  font-size:20px;
+  line-height:20px;
+  font-weight:400;
+  color:#FFF;
+}
+
+.vertical-line{
+  position:absolute;
+  height:100%;
+  width:1px;
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  border-left:1px solid #cbcaca;
+}
+
+#end-of-story{
+  margin-top:30px;
+  margin-bottom:50px;
+}
+
+#last-row-date-wrapper{
+  position:relative;
+  display:block;
+  padding-top:100px;
+  padding-bottom:30px;
+}

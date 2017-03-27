@@ -41,30 +41,414 @@
 .wedding-item-wrapper{
   margin-bottom:40px;
 }
+/* 06.4.5 Couple Name Title 					 */
+/* ----------------------------------------------*/
+#slide-couplename-wrapper{
+  margin-top:110px
+}
+
+#slide-his-name{
+  position:relative;
+  font-family: 'Great Vibes', cursive;
+  font-size:115px;
+}
+
+#slide-and-text{
+  position:relative;
+  font-family: 'Great Vibes', cursive;
+  font-size:54px;
+  margin-top:30px;
+}
+
+#curve-graphic{
+  position:absolute;
+  margin:auto;
+  top:2px;
+  left:35px;
+  right:0
+}
+
+#and-text{
+  position:absolute;
+  top:10px;
+  margin:auto;
+  left:35px;
+  right:0
+}
+
+#slide-her-name{
+  position:relative;
+  font-family: 'Great Vibes', cursive;
+  font-size:115px;
+  margin-top:130px;
+}
+
+#slide-other-text{
+  font-family: 'Montserrat', sans-serif;
+  font-size:14px;
+  letter-spacing:6px;
+  margin-top:100px;
+}
+/*===============================================*/
+/* 10. PHOTO ITEM								 */
+/*===============================================*/
+.photo-item {
+  position:relative;
+  overflow:hidden;
+}
+
+.photo-item.frame-border {
+  background-color:#FFF;
+  border:8px solid #FFF;
+}
 
 /* ----------------------------------------------*/
-/* 13.4 Footer Section				 			 */
+/* 10.1 Image 									 */
 /* ----------------------------------------------*/
-footer .image-divider.fixed-height{
-  height:500px;
+.photo-item img {
+  width:100%;
 }
 
-#thank{
-  font-family: 'Great Vibes', cursive;
-  font-size:85px;
+/* ----------------------------------------------*/
+/* 10.2 Layer 								 	 */
+/* ----------------------------------------------*/
+.photo-item .layer {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  height:100%;
 }
 
-#you{
-  font-family: 'Great Vibes', cursive;
-  font-size:85px;
-  margin-top:40px;
-  margin-bottom:80px;
-  margin-left:15px
+.photo-item .layer.wh100{
+  width:100%;
+  height:100%;
 }
 
-#footer-couplename-wrapper{
-  -ms-transform: scale(0.7, 0.7);
-  -webkit-transform: scale(0.7, 0.7);
-  transform: scale(0.7, 0.7);
-  margin-bottom:50px;
+.photo-item .layer.wh95{
+  width:95%;
+  height:95%;
+}
+
+
+/* 10.2.1 Layer : Second Image   				 */
+/* ----------------------------------------------*/
+.photo-item .layer.second-image{
+  opacity: 0;
+}
+
+
+/* 10.2.2 Layer : Black Overlay  				 */
+/* ----------------------------------------------*/
+.photo-item .layer.opacity-black-overlay{
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.3;
+}
+
+.photo-item .layer.hidden-black-overlay{
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+
+/* 10.2.3 Layer : Photo Caption  				 */
+/* ----------------------------------------------*/
+.photo-item .layer.photo-caption{
+  opacity: 1;
+}
+
+.photo-item .layer.hidden-photo-caption{
+  opacity: 0;
+}
+
+.photo-item .layer.border-photo-caption{
+  opacity: 1;
+  border:1px solid #FFF;
+}
+
+.photo-item .layer.hidden-border-photo-caption{
+  opacity: 0;
+  border:1px solid #FFF;
+}
+
+/* 10.2.4 Layer : Icon / Button Link		 	 */
+/* ----------------------------------------------*/
+.photo-item .layer.link{
+  opacity: 1;
+}
+
+.photo-item .layer.hidden-link{
+  opacity: 0;
+}
+
+.photo-item:hover .layer.hover-animation.fade-in{
+  opacity: 1;
+}
+
+.photo-item:hover .layer.hover-animation.half-fade-in{
+  opacity: 0.3;
+}
+
+.photo-item:hover .layer.hover-animation.fade-out{
+  opacity: 0;
+}
+
+/* ----------------------------------------------*/
+/* 10.3 on Hover Animation					 	*/
+/* ----------------------------------------------*/
+.photo-item img.hover-animation, .photo-item:hover img.hover-animation{
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  /*The transition will be disabled on script.js for tablet/mobile*/
+}
+
+.photo-item .layer.hover-animation, .photo-item:hover .layer.hover-animation {
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  /*The transition will be disabled on script.js for tablet/mobile*/
+}
+
+/* 10.3.1 on Hover Animation Duration		 	 */
+/* ----------------------------------------------*/
+.photo-item:hover .layer.hover-animation.duration1,
+.photo-item:hover img.hover-animation.duration1{
+  transition-duration:0.5s;
+}
+
+.photo-item:hover .layer.hover-animation.duration2,
+.photo-item:hover img.hover-animation.duration12{
+  transition-duration:1s;
+}
+
+.photo-item:hover .layer.hover-animation.duration3,
+.photo-item:hover img.hover-animation.duration3{
+  transition-duration:1.5s;
+}
+
+.photo-item:hover .layer.hover-animation.duration4,
+.photo-item:hover img.hover-animation.duration4{
+  transition-duration:2s;
+}
+
+.photo-item:hover .layer.hover-animation.duration5,
+.photo-item:hover img.hover-animation.duration5{
+  transition-duration:2.5s;
+}
+
+/* 10.3.2 on Hover Animation Delay		 	 	 */
+/* ----------------------------------------------*/
+.photo-item:hover .layer.hover-animation.delay1,
+.photo-item:hover img.hover-animation.delay1{
+  transition-delay:0.5s;
+}
+
+.photo-item:hover .layer.hover-animation.delay2,
+.photo-item:hover img.hover-animation.delay2{
+  transition-delay:1s;
+}
+
+.photo-item:hover .layer.hover-animation.delay3,
+.photo-item:hover img.hover-animation.delay3{
+  transition-delay:1.5s;
+}
+
+.photo-item:hover .layer.hover-animation.delay4,
+.photo-item:hover img.hover-animation.delay4{
+  transition-delay:2s;
+}
+
+.photo-item:hover .layer.hover-animation.delay5,
+.photo-item:hover img.hover-animation.delay5{
+  transition-delay:2.5s;
+}
+
+
+/* 10.3.3 on Hover Zoom In					 	 */
+/* ----------------------------------------------*/
+.photo-item:hover img.hover-animation.image-zoom-in {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* 10.3.4 on Hover Zoom In and Rotate	 	 	*/
+/* ----------------------------------------------*/
+.photo-item:hover img.hover-animation.image-zoom-rotate {
+  -webkit-transform: rotate(7deg) scale(1.1);
+  -ms-transform: rotate(7deg) scale(1.1);
+  -o-transform: rotate(7deg) scale(1.1);
+  transform: rotate(7deg) scale(1.1);
+}
+
+/* 10.3.5 on Hover Fade Out				 		 */
+/* ----------------------------------------------*/
+.photo-item:hover img.hover-animation.image-fade-out {
+  opacity:0;
+}
+
+
+/*===============================================*/
+/* 11. MASONRY GALLERY							 */
+/*===============================================*/
+.masonry-col.w100{
+  width:100%;
+}
+
+/* ----------------------------------------------*/
+/* 11.1 Three Column No Gutter		 			 */
+/* ----------------------------------------------*/
+.three-col .grid-sizer{
+  width:33.33%;
+}
+
+.three-col .gutter-sizer{
+  width:0;
+}
+
+.three-col .masonry-col.w33{
+  width:33.33%;
+}
+
+.three-col .masonry-col.w66{
+  width:66.67%;
+}
+
+
+/* ----------------------------------------------*/
+/* 11.2 Three Column With Gutter	 			 */
+/* ----------------------------------------------*/
+.three-col.with-gutter .grid-sizer{
+  width:31%;
+}
+
+.three-col.with-gutter .gutter-sizer{
+  width:3.5%;
+}
+
+.three-col.with-gutter .masonry-col{
+  margin-bottom:30px;
+}
+
+
+.three-col.with-gutter .masonry-col.w33{
+  width:31%;
+}
+
+.three-col.with-gutter .masonry-col.w66{
+  width:62%;
+}
+
+/* ----------------------------------------------*/
+/* 11.3 Four Column No Gutter		 			 */
+/* ----------------------------------------------*/
+.four-col .grid-sizer{
+  width:25%;
+}
+
+.four-col .gutter-sizer{
+  width:0;
+}
+
+.four-col .masonry-col.w25{
+  width:25%;
+}
+
+.four-col .masonry-col.w50{
+  width:50%;
+}
+
+.four-col .masonry-col.w75{
+  width:75%;
+}
+
+/* ----------------------------------------------*/
+/* 11.4 Four Column With Gutter		 			 */
+/* ----------------------------------------------*/
+.four-col.with-gutter .grid-sizer{
+  width:23%;
+}
+
+.four-col.with-gutter .gutter-sizer{
+  width:2.666%;
+}
+
+.four-col.with-gutter .masonry-col{
+  margin-bottom:25px;
+}
+
+.four-col.with-gutter .masonry-col.w25{
+  width:23%;
+}
+
+.four-col.with-gutter .masonry-col.w50{
+  width:46%;
+}
+
+.four-col.with-gutter .masonry-col.w75{
+  width:69%;
+}
+
+/* ----------------------------------------------*/
+/* 11.5 Five Column No Gutter		 			 */
+/* ----------------------------------------------*/
+.five-col .grid-sizer{
+  width:20%;
+}
+
+.five-col .gutter-sizer{
+  width:0;
+}
+
+.five-col .masonry-col.w20{
+  width:20%;
+}
+
+.five-col .masonry-col.w40{
+  width:40%;
+}
+
+.five-col .masonry-col.w60{
+  width:60%;
+}
+
+.five-col .masonry-col.w80{
+  width:80%;
+}
+
+/* ----------------------------------------------*/
+/* 11.6 Five Column With Gutter		 			 */
+/* ----------------------------------------------*/
+.five-col.with-gutter .grid-sizer{
+  width:18%;
+}
+
+.five-col.with-gutter .gutter-sizer{
+  width:2.5%;
+}
+
+.five-col.with-gutter .masonry-col{
+  margin-bottom:25px;
+}
+
+.five-col.with-gutter .masonry-col.w20{
+  width:18%;
+}
+
+.five-col.with-gutter .masonry-col.w40{
+  width:36%;
+}
+
+.five-col.with-gutter .masonry-col.w60{
+  width:54%;
+}
+
+.five-col.with-gutter .masonry-col.w80{
+  width:72%;
 }

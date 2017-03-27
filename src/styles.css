@@ -1,4 +1,152 @@
 /*===============================================*/
+/* 01. GENERAL			 						 */
+/*===============================================*/
+body{
+  font-family: 'Raleway', sans-serif;
+  color:#666;
+  background-color:#faf8f8;
+  font-size:16px;
+  line-height:27px;
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a{
+  color:#4a4a4a;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover{
+  color:#f98d8a;
+}
+
+h1, .h1{
+  font-size:54px;
+  letter-spacing:4px;
+  margin: 40px 0;
+}
+
+h1.bigger, .h1.bigger{
+  font-size:60px;
+}
+
+h2, .h2{
+  font-size:42px;
+  letter-spacing:4px;
+  margin: 40px 0;
+}
+
+h3, .h3{
+  font-size:30px;
+  letter-spacing:4px;
+  margin: 30px 0;
+}
+
+h4, .h4{
+  font-size:24px;
+  letter-spacing:2px;
+  line-height:30px;
+  margin:20px 0;
+}
+
+h5, .h5{
+  font-size: 16px;
+  letter-spacing:2px;
+  margin:20px 0;
+  line-height:24px;
+}
+
+h6, .h6{
+  font-size: 14px;
+  letter-spacing:2px;
+  margin:10px 0;
+  line-height:24px;
+}
+
+h1.inline, h2.inline, h3.inline,
+h4.inline, h5.inline, h6.inline{
+  display:inline;
+  vertical-align:middle;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size:16px;
+  line-height:27px;
+  margin-bottom:25px;
+}
+
+p.lead{
+  font-size:20px;
+  line-height:30px;
+  font-weight:normal;
+}
+
+a{
+  text-decoration:none;
+  color:#f98d8a;
+}
+
+a.grey-link{
+  color:#6a6a6a;
+}
+
+a.with-underline{
+  text-decoration:underline;
+}
+
+a:hover{
+  text-decoration:none;
+  color:#f98d8a;
+}
+
+.clearboth{
+  clear:both;
+}
+
+.no-padding{
+  padding:0;
+}
+
+.no-margin{
+  margin:0;
+}
+
+img.fullwidth{
+  width:100%;
+}
+
+img.with-border{
+  border:1px solid #6a6a6a;
+}
+
+img.rounded{
+  border-radius:50%;
+}
+
+.hide-on-mobile{
+  display:block;
+}
+
+.hide-on-desktop{
+  display:none;
+}
+
+.theme-color{
+  color:#f98d8a;
+}
+
+.paragraph-row-wrapper{
+  margin:40px 0;
+}
+/*===============================================*/
 /* 07. PAGE										 */
 /*===============================================*/
 
@@ -247,3 +395,878 @@ button.mfp-close, button.mfp-arrow {
   background-color:#f98d8a;
   color:#FFF;
 }
+/*-----------------------------------------------*/
+/* 07.1.8 Map									 */
+/*-----------------------------------------------*/
+.popup-map-wrapper{
+  position:fixed;
+  z-index:2001;
+  display:block;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.7);
+  display:none;
+}
+
+.popup-map{
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:70%;
+  height:80%;
+  margin:auto;
+}
+
+#map-canvas-1{
+  height:600px;
+  width:100%;
+}
+
+#map-canvas-2{
+  height:450px;
+  width:100%;
+}
+
+#map-canvas-3{
+  height:600px;
+  width:100%;
+}
+
+#map-canvas-4{
+  height:650px;
+  width:100%;
+}
+
+#popup-map-canvas{
+  width:100%;
+  height:100%;
+}
+
+.main-icon-wrapper{
+  height:175px;
+  width:175px;
+  position:relative;
+}
+
+.big-circle{
+  position:relative;
+  height:175px;
+  width:175px;
+  border-radius:50%;
+  background-color: rgba(249, 141, 138, 0.8);
+}
+
+.main-icon-text{
+  position:absolute;
+  font-size:16px;
+  line-height:24px;
+  font-family: 'Montserrat', sans-serif;
+  color:#FFF;
+  text-align:center;
+  top:60px;
+  left:0;
+  right:0;
+  margin: auto;
+}
+
+.info-window-wrapper{
+  padding:5px;
+}
+
+.info-window-desc{
+  font-size:14px;
+  line-height:20px;
+}
+
+.info-window-link{
+  font-size:14px;
+  line-height:20px;
+  margin-top:8px;
+}
+
+@-webkit-keyframes scale-animation {
+  0%{-webkit-transform: scale(1, 1);}
+  50% {-webkit-transform: scale(0.85, 0.85);}
+}
+
+@-moz-keyframes scale-animation {
+  0% {-moz-transform: scale(1, 1);}
+  50% {-moz-transform: scale(0.85, 0.85);}
+}
+
+@-o-keyframes scale-animation {
+  0%{-o-transform: scale(1, 1);}
+  50% {-o-transform: scale(0.85, 0.85);}
+}
+@keyframes scale-animation {
+  0% {transform: scale(1, 1);}
+  50% {transform: scale(0.85, 0.85);}
+}
+
+.scale-animation{
+  animation: scale-animation 2s infinite;
+  -webkit-animation: scale-animation 2s infinite;
+  -moz-animation: scale-animation 2s infinite;
+  -o-animation: scale-animation 2s infinite;
+}
+/*-----------------------------------------------*/
+/* 07.1.8 Map									 */
+/*-----------------------------------------------*/
+.popup-map-wrapper{
+  position:fixed;
+  z-index:2001;
+  display:block;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.7);
+  display:none;
+}
+
+.popup-map{
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:70%;
+  height:80%;
+  margin:auto;
+}
+
+#map-canvas-1{
+  height:600px;
+  width:100%;
+}
+
+#map-canvas-2{
+  height:450px;
+  width:100%;
+}
+
+#map-canvas-3{
+  height:600px;
+  width:100%;
+}
+
+#map-canvas-4{
+  height:650px;
+  width:100%;
+}
+
+#popup-map-canvas{
+  width:100%;
+  height:100%;
+}
+
+.main-icon-wrapper{
+  height:175px;
+  width:175px;
+  position:relative;
+}
+
+.big-circle{
+  position:relative;
+  height:175px;
+  width:175px;
+  border-radius:50%;
+  background-color: rgba(249, 141, 138, 0.8);
+}
+
+.main-icon-text{
+  position:absolute;
+  font-size:16px;
+  line-height:24px;
+  font-family: 'Montserrat', sans-serif;
+  color:#FFF;
+  text-align:center;
+  top:60px;
+  left:0;
+  right:0;
+  margin: auto;
+}
+
+.info-window-wrapper{
+  padding:5px;
+}
+
+.info-window-desc{
+  font-size:14px;
+  line-height:20px;
+}
+
+.info-window-link{
+  font-size:14px;
+  line-height:20px;
+  margin-top:8px;
+}
+
+@-webkit-keyframes scale-animation {
+  0%{-webkit-transform: scale(1, 1);}
+  50% {-webkit-transform: scale(0.85, 0.85);}
+}
+
+@-moz-keyframes scale-animation {
+  0% {-moz-transform: scale(1, 1);}
+  50% {-moz-transform: scale(0.85, 0.85);}
+}
+
+@-o-keyframes scale-animation {
+  0%{-o-transform: scale(1, 1);}
+  50% {-o-transform: scale(0.85, 0.85);}
+}
+@keyframes scale-animation {
+  0% {transform: scale(1, 1);}
+  50% {transform: scale(0.85, 0.85);}
+}
+
+.scale-animation{
+  animation: scale-animation 2s infinite;
+  -webkit-animation: scale-animation 2s infinite;
+  -moz-animation: scale-animation 2s infinite;
+  -o-animation: scale-animation 2s infinite;
+}
+/*===============================================*/
+/* 08. ICON										 */
+/*===============================================*/
+.de-icon{
+  /*width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size:35px;*/
+  text-align: center;
+  vertical-align: middle;
+  margin:8px 0px;
+
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  /*The transition will be disabled on script.js for tablet/mobile*/
+}
+
+.de-icon.aligncenter{
+  margin:0 auto;
+}
+
+.de-icon.inline{
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:4px !important;
+}
+
+/*.de-icon.float{
+	float:left;
+	margin-right:15px
+}*/
+
+.de-icon i{
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  /*The transition will be disabled on script.js for tablet/mobile*/
+}
+
+/*------------------------------------------------*/
+/* 08.1	 Size 							   	  	  */
+/*------------------------------------------------*/
+.de-icon.large-size{
+  font-size:30px;
+  margin:15px 0;
+}
+
+.de-icon.large-size.circle,
+.de-icon.large-size.square,
+.de-icon.large-size.rounded{
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+}
+
+.de-icon.medium-size{
+  /*font-size:24px;*/
+  font-size:22px;
+  margin:10px 0;
+}
+
+.de-icon.medium-size.circle,
+.de-icon.medium-size.square,
+.de-icon.medium-size.rounded{
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+}
+
+.de-icon.small-size{
+  /*font-size:18px;	*/
+  font-size:16px;
+  margin:5px 0;
+}
+
+.de-icon.small-size.circle,
+.de-icon.small-size.square,
+.de-icon.small-size.rounded{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+/*.de-icon.very-small-size{
+	font-size:11px;
+}
+
+.de-icon.very-small-size.circle,
+.de-icon.very-small-size.square,
+.de-icon.very-small-size.rounded{
+	width: 25px;
+	height: 25px;
+	line-height: 18px;
+}*/
+
+/*------------------------------------------------*/
+/* 08.2 Shape / Color							  */
+/*------------------------------------------------*/
+
+/* 08.2.1 Default								  */
+/*------------------------------------------------*/
+.de-icon{
+  color:#f98d8a;
+}
+
+.de-icon.square, .de-icon.circle, .de-icon.rounded{
+  background-color:#f98d8a;
+  color:#FFF;
+  /*border:1px solid #f98d8a;*/
+}
+
+.de-icon.outline{
+  background-color:transparent;
+  color:#f98d8a;
+  border:1px solid;
+}
+
+.de-icon.outline.dark-1{
+  background-color:transparent;
+  color:#666;
+  border:1px solid;
+}
+
+a:hover .de-icon{
+  color:#fa9996;
+}
+
+a:hover .de-icon.square, a:hover .de-icon.circle, a:hover .de-icon.rounded, a:hover .de-icon.outline{
+  color:#FFF;
+  background-color:#fa9996;
+}
+
+
+/* 08.2.2 Light-1						 		 */
+/*------------------------------------------------*/
+.de-icon.light-1{
+  color:#FFF;
+}
+
+.de-icon.light-1.square, .de-icon.light-1.circle, .de-icon.light-1.rounded{
+  background-color:#FFF;
+  color:#f98d8a;
+  border:1px solid #FFF;
+}
+
+.de-icon.light-1.outline{
+  background-color:transparent;
+  color:#FFF;
+  border:1px solid #FFF;
+}
+
+a:hover .de-icon.light-1	{
+  color:#f98d8a;
+}
+
+a:hover .de-icon.light-1.square, a:hover .de-icon.light-1.circle, a:hover .de-icon.light-1.rounded, a:hover .de-icon.light-1.outline{
+  color:#FFF;
+  background-color:#f98d8a;
+  border-color: #f98d8a;
+}
+
+/* 08.2.3 Light-2						  */
+/*------------------------------------------------*/
+.de-icon.light-2{
+  color:#FFF;
+}
+
+.de-icon.light-2.square, .de-icon.light-2.circle, .de-icon.light-2.rounded{
+  background-color:#FFF;
+  color:#666;
+  border:1px solid #FFF;
+}
+
+.de-icon.light-2.outline{
+  background-color:transparent;
+  color:#FFF;
+  border:1px solid #FFF;
+}
+
+a:hover .de-icon.light-2	{
+  color:#666;
+}
+
+a:hover .de-icon.light-2.square, a:hover .de-icon.light-2.circle, a:hover .de-icon.light-2.rounded, a:hover .de-icon.light-2.outline{
+  color:#FFF;
+  background-color:#f98d8a;
+  border-color: #f98d8a;
+}
+
+
+/* 08.2.4 Circle, Rounded, Square				  */
+/*------------------------------------------------*/
+.de-icon.circle{
+  border-radius: 50%;
+}
+
+.de-icon.rounded{
+  border-radius: 20%;
+}
+
+
+/*------------------------------------------------*/
+/* 08.3 Effect Zoom 						 	  */
+/*------------------------------------------------*/
+.de-icon.effect-1{
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+a:hover .de-icon.effect-1{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/*------------------------------------------------*/
+/* 08.4 Effect Rotate						  	  */
+/*------------------------------------------------*/
+.de-icon.effect-2 i{
+  display:block;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+a:hover .de-icon.effect-2 i{
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/*------------------------------------------------*/
+/* 08.5 Effect Square/Rounded To Circle 	  	  */
+/*------------------------------------------------*/
+a:hover .de-icon.effect-3{
+  border-radius: 50%;
+}
+/*-----------------------------------------------*/
+/* 07.1.5 Popup Template						 */
+/*-----------------------------------------------*/
+#popup-template{
+  width:900px;
+  margin:30px auto;
+  background-color:#FFF;
+}
+
+#popup-template #main-image{
+  height:485px;
+  width:100%;
+  position:relative;
+}
+
+#popup-template-title-wrapper{
+  position:absolute;
+  bottom:40px;
+  color:#FFF;
+  text-align:center;
+  padding:0 40px;
+  margin:0 auto;
+  width:100%;
+}
+
+#popup-template #the-content{
+  padding:60px 75px;
+}
+
+#popup-template #the-content img{
+  width:100%;
+  margin:10px 0 30px 0;
+}
+
+/*-----------------------------------------------*/
+/* 07.1.6 Autocrop Image						 */
+/*-----------------------------------------------*/
+.autocrop-image{
+  display:block;
+  background-position:center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  overflow:hidden;
+}
+
+
+/*-----------------------------------------------*/
+/* 07.1.7 Popup Video							 */
+/*-----------------------------------------------*/
+.popup-video-wrapper{
+  position:fixed;
+  z-index:2001;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.7);
+  display:none;
+}
+
+.popup-video{
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:50%;
+  margin:auto;
+  background-color:#000;
+}
+/* ----------------------------------------------*/
+/* 15.1 About / Story Page		 			 	 */
+/* ----------------------------------------------*/
+#slide-about-wrapper{
+  margin-bottom:60px;
+}
+
+.profile-photo{
+  width:165px;
+  height:165px;
+  margin:0 auto;
+}
+/*===============================================*/
+/* 10. PHOTO ITEM								 */
+/*===============================================*/
+.photo-item {
+  position:relative;
+  overflow:hidden;
+}
+
+.photo-item.frame-border {
+  background-color:#FFF;
+  border:8px solid #FFF;
+}
+
+/* ----------------------------------------------*/
+/* 10.1 Image 									 */
+/* ----------------------------------------------*/
+.photo-item img {
+  width:100%;
+}
+
+/* ----------------------------------------------*/
+/* 10.2 Layer 								 	 */
+/* ----------------------------------------------*/
+.photo-item .layer {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+}
+
+.photo-item .layer.wh100{
+  width:100%;
+  height:100%;
+}
+
+.photo-item .layer.wh95{
+  width:95%;
+  height:95%;
+}
+
+
+/* 10.2.1 Layer : Second Image   				 */
+/* ----------------------------------------------*/
+.photo-item .layer.second-image{
+  opacity: 0;
+}
+
+
+/* 10.2.2 Layer : Black Overlay  				 */
+/* ----------------------------------------------*/
+.photo-item .layer.opacity-black-overlay{
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.3;
+}
+
+.photo-item .layer.hidden-black-overlay{
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+
+/* 10.2.3 Layer : Photo Caption  				 */
+/* ----------------------------------------------*/
+.photo-item .layer.photo-caption{
+  opacity: 1;
+}
+
+.photo-item .layer.hidden-photo-caption{
+  opacity: 0;
+}
+
+.photo-item .layer.border-photo-caption{
+  opacity: 1;
+  border:1px solid #FFF;
+}
+
+.photo-item .layer.hidden-border-photo-caption{
+  opacity: 0;
+  border:1px solid #FFF;
+}
+
+/* 10.2.4 Layer : Icon / Button Link		 	 */
+/* ----------------------------------------------*/
+.photo-item .layer.link{
+  opacity: 1;
+}
+
+.photo-item .layer.hidden-link{
+  opacity: 0;
+}
+
+.photo-item:hover .layer.hover-animation.fade-in{
+  opacity: 1;
+}
+
+.photo-item:hover .layer.hover-animation.half-fade-in{
+  opacity: 0.3;
+}
+
+.photo-item:hover .layer.hover-animation.fade-out{
+  opacity: 0;
+}
+
+/* ----------------------------------------------*/
+/* 10.3 on Hover Animation					 	*/
+/* ----------------------------------------------*/
+.photo-item img.hover-animation, .photo-item:hover img.hover-animation{
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  /*The transition will be disabled on script.js for tablet/mobile*/
+}
+
+.photo-item .layer.hover-animation, .photo-item:hover .layer.hover-animation {
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  /*The transition will be disabled on script.js for tablet/mobile*/
+}
+
+/* 10.3.1 on Hover Animation Duration		 	 */
+/* ----------------------------------------------*/
+.photo-item:hover .layer.hover-animation.duration1,
+.photo-item:hover img.hover-animation.duration1{
+  transition-duration:0.5s;
+}
+
+.photo-item:hover .layer.hover-animation.duration2,
+.photo-item:hover img.hover-animation.duration12{
+  transition-duration:1s;
+}
+
+.photo-item:hover .layer.hover-animation.duration3,
+.photo-item:hover img.hover-animation.duration3{
+  transition-duration:1.5s;
+}
+
+.photo-item:hover .layer.hover-animation.duration4,
+.photo-item:hover img.hover-animation.duration4{
+  transition-duration:2s;
+}
+
+.photo-item:hover .layer.hover-animation.duration5,
+.photo-item:hover img.hover-animation.duration5{
+  transition-duration:2.5s;
+}
+
+/* 10.3.2 on Hover Animation Delay		 	 	 */
+/* ----------------------------------------------*/
+.photo-item:hover .layer.hover-animation.delay1,
+.photo-item:hover img.hover-animation.delay1{
+  transition-delay:0.5s;
+}
+
+.photo-item:hover .layer.hover-animation.delay2,
+.photo-item:hover img.hover-animation.delay2{
+  transition-delay:1s;
+}
+
+.photo-item:hover .layer.hover-animation.delay3,
+.photo-item:hover img.hover-animation.delay3{
+  transition-delay:1.5s;
+}
+
+.photo-item:hover .layer.hover-animation.delay4,
+.photo-item:hover img.hover-animation.delay4{
+  transition-delay:2s;
+}
+
+.photo-item:hover .layer.hover-animation.delay5,
+.photo-item:hover img.hover-animation.delay5{
+  transition-delay:2.5s;
+}
+
+
+/* 10.3.3 on Hover Zoom In					 	 */
+/* ----------------------------------------------*/
+.photo-item:hover img.hover-animation.image-zoom-in {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* 10.3.4 on Hover Zoom In and Rotate	 	 	*/
+/* ----------------------------------------------*/
+.photo-item:hover img.hover-animation.image-zoom-rotate {
+  -webkit-transform: rotate(7deg) scale(1.1);
+  -ms-transform: rotate(7deg) scale(1.1);
+  -o-transform: rotate(7deg) scale(1.1);
+  transform: rotate(7deg) scale(1.1);
+}
+
+/* 10.3.5 on Hover Fade Out				 		 */
+/* ----------------------------------------------*/
+.photo-item:hover img.hover-animation.image-fade-out {
+  opacity:0;
+}
+/* ----------------------------------------------*/
+/* 05.2	Wedding Logo							 */
+/* ----------------------------------------------*/
+.logo-scale-wrapper{
+  -ms-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+  -ms-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+
+.wedding-logo{
+  position:relative;
+  width:70px;
+  height:70px;
+  margin:0 auto;
+  margin-bottom:30px;
+}
+
+.transparent .wedding-logo{
+  color:#FFF;
+}
+
+.transparent.stick-it .wedding-logo{
+  color:#666;
+}
+
+.line-1{
+  position:absolute;
+  width:77px;
+  height:5px;
+  top:30px;
+  left:-3px;
+  border-bottom:2px solid #FFF;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.line-2{
+  position:absolute;
+  width:77px;
+  height:5px;
+  top:30px;
+  right:-2px;
+  border-bottom:2px solid #FFF;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.transparent.stick-it .line-1,
+.transparent.stick-it .line-2,
+.block-color .line-1,
+.block-color .line-2{
+  border-color:#666;
+}
+
+.his-initial{
+  position:absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size:18px;
+  top:20px;
+}
+
+.her-initial{
+  position:absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size:18px;
+  top:20px;
+  right:0;
+}
+
+.top-heart{
+  position:absolute;
+  font-family: 'fontello', sans-serif;
+  font-weight:700;
+  font-size:11px;
+  top:2px;
+  left:26px;
+  color:#f98d8a;
+}
+
+.bottom-heart{
+  position:absolute;
+  font-family: 'fontello', sans-serif;
+  font-weight:700;
+  font-size:11px;
+  bottom:2px;
+  left:26px;
+  color:#f98d8a;
+}
+
+/* ----------------------------------------------*/
+/* 05.3	IMG Logo								 */
+/* ----------------------------------------------*/
+.img-logo, .img-logo img{
+  width:100%;
+}
+

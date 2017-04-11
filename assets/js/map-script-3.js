@@ -101,7 +101,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map,
-         	labelContent: '<div id="aggieicecream-marker" class="de-icon circle medium-size" style="background-color:#fc9e9e;"><i class="icon-ice-cream"></i></div>',
+         	labelContent: '<div id="aggieicecream-marker" class="de-icon circle medium-size" style="background-color:#c2f2d0;"><i class="icon-ice-cream"></i></div>',
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
@@ -123,7 +123,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map,
-         	labelContent: '<div id="caspers-marker" class="de-icon circle medium-size" style="background-color:#bfd730;"><i class="icon-ice-cream"></i></div>',
+         	labelContent: '<div id="caspers-marker" class="de-icon circle medium-size" style="background-color:#c2f2d0;"><i class="icon-ice-cream"></i></div>',
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
@@ -134,7 +134,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map,
-         	labelContent: '<div id="lazy-one-marker" class="de-icon circle medium-size" style="background-color:#8fcbda;"><i class="icon-pajamas"></i></div>',
+         	labelContent: '<div id="lazy-one-marker" class="de-icon circle medium-size" style="background-color:#800020;"><i class="icon-pajamas"></i></div>',
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
@@ -145,7 +145,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map,
-         	labelContent: '<div id="sockoutlet-marker" class="de-icon circle medium-size" style="background-color:#797ee6;"><i class="icon-socks"></i></div>',
+         	labelContent: '<div id="sockoutlet-marker" class="de-icon circle medium-size" style="background-color:#800020;"><i class="icon-socks"></i></div>',
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
@@ -155,7 +155,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map,
-         	labelContent: '<div id="zootah-marker" class="de-icon circle medium-size" style="background-color:#797ee6;"><i class="icon-zoo"></i></div>',
+         	labelContent: '<div id="zootah-marker" class="de-icon circle medium-size" style="background-color:#fdf5c9;"><i class="icon-zoo"></i></div>',
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
@@ -166,7 +166,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map,
-         	labelContent: '<div id="pepperidgefarm-marker" class="de-icon circle medium-size" style="background-color:#797ee6;"><i class="icon-cracker"></i></div>',
+         	labelContent: '<div id="pepperidgefarm-marker" class="de-icon circle medium-size" style="background-color:#6b3e26;"><i class="icon-cracker"></i></div>',
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
@@ -176,7 +176,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map,
-         	labelContent: '<div id="firehouse-marker" class="de-icon circle medium-size" style="background-color:#797ee6;"><i class="icon-pizza"></i></div>',
+         	labelContent: '<div id="firehouse-marker" class="de-icon circle medium-size" style="background-color:#e12301;"><i class="icon-pizza"></i></div>',
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
@@ -186,7 +186,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map,
-         	labelContent: '<div id="charlies-marker" class="de-icon circle medium-size" style="background-color:#797ee6;"><i class="icon-ice-cream"></i></div>',
+         	labelContent: '<div id="charlies-marker" class="de-icon circle medium-size" style="background-color:#c2f2d0;"><i class="icon-ice-cream"></i></div>',
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
@@ -196,7 +196,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map,
-         	labelContent: '<div id="cafesabor-marker" class="de-icon circle medium-size" style="background-color:#797ee6;"><i class="icon-burrito"></i></div>',
+         	labelContent: '<div id="cafesabor-marker" class="de-icon circle medium-size" style="background-color:#e12301;"><i class="icon-burrito"></i></div>',
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
@@ -206,7 +206,7 @@
        		raiseOnDrag: false,
        		icon: ' ',
        		map: map,
-         	labelContent: '<div id="ritewoodeggs-marker" class="de-icon circle medium-size" style="background-color:#797ee6;"><i class="icon-eggs-icon"></i></div>',
+         	labelContent: '<div id="ritewoodeggs-marker" class="de-icon circle medium-size" style="background-color:#e12301;"><i class="icon-eggs-icon"></i></div>',
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
@@ -226,7 +226,7 @@
             raiseOnDrag: false,
             icon: ' ',
             map: map,
-            labelContent: '<div id="firehouse-smithfield-marker" class="de-icon circle medium-size" style="background-color:#797ee6;"><i class="icon-pizza"></i></div>',
+            labelContent: '<div id="firehouse-smithfield-marker" class="de-icon circle medium-size" style="background-color:#e12301;"><i class="icon-pizza"></i></div>',
             labelAnchor: new google.maps.Point(27, 27),
             labelClass: "labels" // the CSS class for the label
         });

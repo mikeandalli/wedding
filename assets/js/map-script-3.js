@@ -11,7 +11,7 @@
 'use strict';
 
 	// CHECK WINDOW RESIZE
-	var is_windowresize = false;
+	let is_windowresize = false;
 	$(window).resize(function(){
 		is_windowresize = true;
 	});
@@ -22,7 +22,7 @@
 
 		// Create an array of styles
 		//=======================================================================================
-  		var styles = [
+  		let styles = [
     		{
       			stylers: [
         			{ hue: "#f98d8a" },
@@ -33,13 +33,13 @@
 
 		// Create a new StyledMapType object, passing it the array of styles,
   		// as well as the name to be displayed on the map type control.
-  		var styledMap = new google.maps.StyledMapType(styles,
+  		let styledMap = new google.maps.StyledMapType(styles,
    			{name: "Styled Map"});
 
 
 		//DEFINE MAP OPTIONS
 		//=======================================================================================
-  		var mapOptions = {
+  		let mapOptions = {
     		zoom: 12,
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
     		center: new google.maps.LatLng(41.734166, -111.827898),
@@ -56,7 +56,7 @@
 
 		//CREATE NEW MAP
 		//=======================================================================================
-  		var map = new google.maps.Map(document.getElementById('map-canvas-3'), mapOptions);
+  		let map = new google.maps.Map(document.getElementById('map-canvas-3'), mapOptions);
 
 		//Associate the styled map with the MapTypeId and set it to display.
  		 map.mapTypes.set('map_style', styledMap);
@@ -64,18 +64,18 @@
 
 		//MARKER ICON
 		//=======================================================================================
-		//var image = 'facebook30.svg';
+		//let image = 'facebook30.svg';
 
 		//ADD NEW MARKER
 		//=======================================================================================
-  		/*var marker = new google.maps.Marker({
+  		/*let marker = new google.maps.Marker({
     		position: map.getCenter(),
    		 	map: map,
     		title: 'Click to zoom',
 			icon: image
   		});
 
-		var marker1 = new google.maps.Marker({
+		let marker1 = new google.maps.Marker({
     		position: new google.maps.LatLng(35.441938, -97.432494),
    		 	map: map,
     		title: 'Click to zoom'
@@ -84,7 +84,7 @@
 
 		//ADD NEW MARKER WITH LABEL
 		//=======================================================================================
-		var marker1 = new MarkerWithLabel({
+		let marker1 = new MarkerWithLabel({
        		position: new google.maps.LatLng(41.734166, -111.827898),
        		draggable: false,
        		raiseOnDrag: false,
@@ -95,7 +95,7 @@
        		labelClass: "labels" // the CSS class for the label
      	});
 
-		var marker2 = new MarkerWithLabel({
+		let marker2 = new MarkerWithLabel({
        		position: new google.maps.LatLng(41.745322, -111.803206),
        		draggable: false,
        		raiseOnDrag: false,
@@ -106,7 +106,7 @@
        		labelClass: "labels" // the CSS class for the label
      	});
 
-		var marker3 = new MarkerWithLabel({
+		let marker3 = new MarkerWithLabel({
        		position: new google.maps.LatLng(41.751243, -111.860484),
        		draggable: false,
        		raiseOnDrag: false,
@@ -117,7 +117,7 @@
        		labelClass: "labels" // the CSS class for the label
      	});
 
-		var marker4 = new MarkerWithLabel({
+		let marker4 = new MarkerWithLabel({
        		position: new google.maps.LatLng(41.947493, -111.830388),
        		draggable: false,
        		raiseOnDrag: false,
@@ -128,7 +128,7 @@
        		labelClass: "labels" // the CSS class for the label
      	});
 
-		var marker5 = new MarkerWithLabel({
+		let marker5 = new MarkerWithLabel({
        		position: new google.maps.LatLng(41.786978, -111.839669),
        		draggable: false,
        		raiseOnDrag: false,
@@ -139,7 +139,7 @@
        		labelClass: "labels" // the CSS class for the label
      	});
 
-		var marker6 = new MarkerWithLabel({
+		let marker6 = new MarkerWithLabel({
        		position: new google.maps.LatLng(41.784173, -111.835237),
        		draggable: false,
        		raiseOnDrag: false,
@@ -149,7 +149,7 @@
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
-		var marker7 = new MarkerWithLabel({
+		let marker7 = new MarkerWithLabel({
        		position: new google.maps.LatLng(41.719128, -111.846464),
        		draggable: false,
        		raiseOnDrag: false,
@@ -160,7 +160,7 @@
        		labelClass: "labels" // the CSS class for the label
      	});
 
-		var marker8 = new MarkerWithLabel({
+		let marker8 = new MarkerWithLabel({
        		position: new google.maps.LatLng(41.939958, -111.815007),
        		draggable: false,
        		raiseOnDrag: false,
@@ -170,7 +170,7 @@
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
-		var marker9 = new MarkerWithLabel({
+		let marker9 = new MarkerWithLabel({
        		position: new google.maps.LatLng(41.719610, -111.834964),
        		draggable: false,
        		raiseOnDrag: false,
@@ -180,7 +180,7 @@
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
-		var marker10 = new MarkerWithLabel({
+		let marker10 = new MarkerWithLabel({
        		position: new google.maps.LatLng(41.754842, -111.834712),
        		draggable: false,
        		raiseOnDrag: false,
@@ -190,7 +190,7 @@
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
-		var marker11 = new MarkerWithLabel({
+		let marker11 = new MarkerWithLabel({
        		position: new google.maps.LatLng(41.733159, -111.851228),
        		draggable: false,
        		raiseOnDrag: false,
@@ -200,7 +200,7 @@
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
-		var marker12 = new MarkerWithLabel({
+		let marker12 = new MarkerWithLabel({
        		position: new google.maps.LatLng(42.034973, -111.778633),
        		draggable: false,
        		raiseOnDrag: false,
@@ -210,7 +210,7 @@
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
-		var marker13 = new MarkerWithLabel({
+		let marker13 = new MarkerWithLabel({
        		position: new google.maps.LatLng(41.741657, -111.791957),
        		draggable: false,
        		raiseOnDrag: false,
@@ -220,6 +220,16 @@
        		labelAnchor: new google.maps.Point(27, 27),
        		labelClass: "labels" // the CSS class for the label
      	});
+        let marker14 = new MarkerWithLabel({
+            position: new google.maps.LatLng(41.824161, -111.831820),
+            draggable: false,
+            raiseOnDrag: false,
+            icon: ' ',
+            map: map,
+            labelContent: '<div id="firehouse-smithfield-marker" class="de-icon circle medium-size" style="background-color:#797ee6;"><i class="icon-pizza"></i></div>',
+            labelAnchor: new google.maps.Point(27, 27),
+            labelClass: "labels" // the CSS class for the label
+        });
 
 
 
@@ -227,14 +237,14 @@
 
 		//INFO WINDOWS 1
 		//=======================================================================================
-		var contentString1 = ''+
+		let contentString1 = ''+
 		'<div class="info-window-wrapper">'+
 			'<h6>Wedding</h6>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-			'<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
+			'<div class="info-window-desc">We will be getting married in the Logan Temple on May 12, 2017 at 3:00 PM. Please arrive an half hour early for the ceremony.</div>'+
+			'<div class="info-window-link"></div>'+
       	'</div>';
 
-		var marker1_infowindow = new google.maps.InfoWindow({
+		let marker1_infowindow = new google.maps.InfoWindow({
       		content: contentString1,
 			maxWidth: 200,
 			pixelOffset: new google.maps.Size(0,-10)
@@ -251,14 +261,14 @@
 
 		//INFO WINDOWS 2
 		//=======================================================================================
-		var contentString2 = ''+
+		let contentString2 = ''+
 		'<div class="info-window-wrapper">'+
 			'<h6>Aggie Ice Cream</h6>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-			'<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
+			'<div class="info-window-desc">Enjoy some Aggie Ice Cream at their creamery. Show some USU pride by ordering some Aggie Blue Mint. While there, take a peek at the campus, where All studies Family Finance.</div>'+
+			'<div class="info-window-link"><a href="http://aggieicecream.usu.edu/" class="grey-link with-underline">Click Here</a></div>'+
       	'</div>';
 
-		var marker2_infowindow = new google.maps.InfoWindow({
+		let marker2_infowindow = new google.maps.InfoWindow({
       		content: contentString2,
 			maxWidth: 200,
 			pixelOffset: new google.maps.Size(0,-10)
@@ -272,14 +282,14 @@
 
 		//INFO WINDOWS 3
 		//=======================================================================================
-		var contentString3 = ''+
+		let contentString3 = ''+
 		'<div class="info-window-wrapper">'+
 			'<h6>Gossners Cheese</h6>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-			'<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
+			'<div class="info-window-desc">Cache Valley’s famous cheese factory is one of our favorites.  Smoked Cheese Curd and root-beer milk is a must buy whenever we stop. Their shelf-stable milk is good for food-storage.</div>'+
+			'<div class="info-window-link"><a href="http://www.gossner.com/" class="grey-link with-underline">Click Here</a></div>'+
       	'</div>';
 
-		var marker3_infowindow = new google.maps.InfoWindow({
+		let marker3_infowindow = new google.maps.InfoWindow({
       		content: contentString3,
 			maxWidth: 200,
 			pixelOffset: new google.maps.Size(0,-10)
@@ -293,14 +303,14 @@
 
 		//INFO WINDOWS 4
 		//=======================================================================================
-		var contentString4 = ''+
+		let contentString4 = ''+
 		'<div class="info-window-wrapper">'+
 			'<h6>Caspers Ice Cream</h6>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-			'<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
+			'<div class="info-window-desc">Want to drink a liquid brick? Perhaps buy a case of Fat-Boys (Ice Cream Sandwiches)? If so, this is the place for you. Don’t forget to grab something for us while you’re there.</div>'+
+			'<div class="info-window-link"><a href="http://caspersicecream.com/" class="grey-link with-underline">Click Here</a></div>'+
       	'</div>';
 
-		var marker4_infowindow = new google.maps.InfoWindow({
+		let marker4_infowindow = new google.maps.InfoWindow({
       		content: contentString4,
 			maxWidth: 200,
 			pixelOffset: new google.maps.Size(0,-10)
@@ -315,21 +325,21 @@
 		//=======================================================================================
 		google.maps.event.addListener(marker4_infowindow, 'closeclick', function() {
 			window.setTimeout(function() {
-      			map.panTo(marker1.getPosition());
+      			map.panTo(marker4.getPosition());
     		}, 500);
   		});
 
 
 		//INFO WINDOWS 5
 		//=======================================================================================
-		var contentString5 = ''+
+		let contentString5 = ''+
 		'<div class="info-window-wrapper">'+
 			'<h6>Lazy One Outfitters</h6>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-			'<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
+			'<div class="info-window-desc">Lazy One is a Punny PJ shop founded by Alli’s neighbor and is sold all over the US. Stop by the outlet store to buy new family PJ’s.</div>'+
+			'<div class="info-window-link"><a href="http://www.lazyone.com/" class="grey-link with-underline">Click Here</a></div>'+
       	'</div>';
 
-		var marker5_infowindow = new google.maps.InfoWindow({
+		let marker5_infowindow = new google.maps.InfoWindow({
       		content: contentString5,
 			maxWidth: 200,
 			pixelOffset: new google.maps.Size(0,-10)
@@ -344,21 +354,21 @@
 		//=======================================================================================
 		google.maps.event.addListener(marker5_infowindow, 'closeclick', function() {
 			window.setTimeout(function() {
-      			map.panTo(marker1.getPosition());
+      			map.panTo(marker5.getPosition());
     		}, 500);
   		});
 
 
 		//INFO WINDOWS 6
 		//=======================================================================================
-		var contentString6 = ''+
+		let contentString6 = ''+
 		'<div class="info-window-wrapper">'+
 			'<h6>Sock Outlet</h6>'+
-			'<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-			'<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
+			'<div class="info-window-desc">Looking for socks? Look no further than the sock outlet- which has every type and style of socks your heart can desire. </div>'+
+			'<div class="info-window-link"><a href="http://www.allaboutsocks.com/" class="grey-link with-underline">Click Here</a></div>'+
       	'</div>';
 
-		var marker6_infowindow = new google.maps.InfoWindow({
+		let marker6_infowindow = new google.maps.InfoWindow({
       		content: contentString6,
 			maxWidth: 200,
 			pixelOffset: new google.maps.Size(0,-10)
@@ -371,14 +381,14 @@
 
     //INFO WINDOWS 7
     //=======================================================================================
-    var contentString7 = ''+
+    let contentString7 = ''+
       '<div class="info-window-wrapper">'+
-      '<h6>Zootah Willow Park</h6>'+
-      '<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-      '<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
+      '<h6>Zootah at Willow Park</h6>'+
+      '<div class="info-window-desc">Logan’s Humble Zoo is fun for kids and adults. Spot the Turtles, feed the fish and deer, see and hear the free roaming peacocks, or have a picnic in the grass area.</div>'+
+      '<div class="info-window-link"><a href="https://www.facebook.com/WillowParkZoo/" class="grey-link with-underline">Click Here</a></div>'+
       '</div>';
 
-    var marker7_infowindow = new google.maps.InfoWindow({
+    let marker7_infowindow = new google.maps.InfoWindow({
       content: contentString7,
       maxWidth: 200,
       pixelOffset: new google.maps.Size(0,-10)
@@ -390,14 +400,14 @@
     });
     //INFO WINDOWS 8
     //=======================================================================================
-    var contentString8 = ''+
+    let contentString8 = ''+
       '<div class="info-window-wrapper">'+
       '<h6>Pepperidge Farms</h6>'+
       '<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
       '<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
       '</div>';
 
-    var marker8_infowindow = new google.maps.InfoWindow({
+    let marker8_infowindow = new google.maps.InfoWindow({
       content: contentString8,
       maxWidth: 200,
       pixelOffset: new google.maps.Size(0,-10)
@@ -409,14 +419,14 @@
     });
     //INFO WINDOWS 9
     //=======================================================================================
-    var contentString9 = ''+
+    let contentString9 = ''+
       '<div class="info-window-wrapper">'+
-      '<h6>Firehouse Pizzaria Logan</h6>'+
-      '<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
-      '<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
+      '<h6>Firehouse Pizzeria Logan and Smithfield</h6>'+
+      '<div class="info-window-desc">Our favorite pizza place in Logan! If you go, make sure you try their focaccia bread with one of their many dipping sauces.</div>'+
+      '<div class="info-window-link"><a href="http://www.firehousepizzeria.com/home.aspx" class="grey-link with-underline">Click Here</a></div>'+
       '</div>';
 
-    var marker9_infowindow = new google.maps.InfoWindow({
+    let marker9_infowindow = new google.maps.InfoWindow({
       content: contentString9,
       maxWidth: 200,
       pixelOffset: new google.maps.Size(0,-10)
@@ -424,18 +434,18 @@
 
     //ON MARKER CLICK EVENTS
     google.maps.event.addListener(marker9, 'click', function() {
-      marker6_infowindow.open(map,marker9);
+      marker9_infowindow.open(map,marker9);
     });
     //INFO WINDOWS 10
     //=======================================================================================
-    var contentString10 = ''+
+    let contentString10 = ''+
       '<div class="info-window-wrapper">'+
       '<h6>Charlies Ice Cream</h6>'+
       '<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
       '<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
       '</div>';
 
-    var marker10_infowindow = new google.maps.InfoWindow({
+    let marker10_infowindow = new google.maps.InfoWindow({
       content: contentString10,
       maxWidth: 200,
       pixelOffset: new google.maps.Size(0,-10)
@@ -447,14 +457,14 @@
     });
     //INFO WINDOWS 11
     //=======================================================================================
-    var contentString11 = ''+
+    let contentString11 = ''+
       '<div class="info-window-wrapper">'+
       '<h6>Cafe Sabor</h6>'+
-      '<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
+      '<div class="info-window-desc">Our Favorite Mexican restaurant, located in an old train stop platform. Their Fajitas, Burritos, and Fried Ice Cream are our favorites! </div>'+
       '<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
       '</div>';
 
-    var marker11_infowindow = new google.maps.InfoWindow({
+    let marker11_infowindow = new google.maps.InfoWindow({
       content: contentString11,
       maxWidth: 200,
       pixelOffset: new google.maps.Size(0,-10)
@@ -466,14 +476,14 @@
     });
     //INFO WINDOWS 12
     //=======================================================================================
-    var contentString12 = ''+
+    let contentString12 = ''+
       '<div class="info-window-wrapper">'+
       '<h6>Ritewood Eggs (Napoleon Dynamite)</h6>'+
       '<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
       '<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
       '</div>';
 
-    var marker12_infowindow = new google.maps.InfoWindow({
+    let marker12_infowindow = new google.maps.InfoWindow({
       content: contentString12,
       maxWidth: 200,
       pixelOffset: new google.maps.Size(0,-10)
@@ -485,15 +495,15 @@
     });
     //INFO WINDOWS 13
     //=======================================================================================
-    var contentString13 = ''+
+    let contentString13 = ''+
       '<div class="info-window-wrapper">'+
       '<h6>First Dam</h6>'+
       '<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
       '<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
       '</div>';
 
-    var marker13_infowindow = new google.maps.InfoWindow({
-      content: contentString6,
+    let marker13_infowindow = new google.maps.InfoWindow({
+      content: contentString13,
       maxWidth: 200,
       pixelOffset: new google.maps.Size(0,-10)
     });
@@ -502,7 +512,25 @@
     google.maps.event.addListener(marker13, 'click', function() {
       marker13_infowindow.open(map,marker13);
     });
+        //INFO WINDOWS 14
+        //=======================================================================================
+        let contentString14 = ''+
+            '<div class="info-window-wrapper">'+
+            '<h6>Firehouse Pizzeria Smithfield</h6>'+
+            '<div class="info-window-desc">Our favorite pizza place in Logan and Smithfield! If you go, make sure you try their focaccia bread with one of their many dipping sauces.</div>'+
+            '<div class="info-window-link"><a href="http://www.firehousepizzeria.com/home.aspx" class="grey-link with-underline">Click Here</a></div>'+
+            '</div>';
 
+        let marker14_infowindow = new google.maps.InfoWindow({
+            content: contentString14,
+            maxWidth: 200,
+            pixelOffset: new google.maps.Size(0,-10)
+        });
+
+        //ON MARKER CLICK EVENTS
+        google.maps.event.addListener(marker14, 'click', function() {
+            marker14_infowindow.open(map,marker14);
+        });
 
 
 

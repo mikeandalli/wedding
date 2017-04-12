@@ -479,7 +479,7 @@
     let contentString12 = ''+
       '<div class="info-window-wrapper">'+
       '<h6>Ritewood Eggs (Napoleon Dynamite)</h6>'+
-      '<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
+      '<div class="info-window-desc"></div>'+
       '<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
       '</div>';
 
@@ -498,7 +498,7 @@
     let contentString13 = ''+
       '<div class="info-window-wrapper">'+
       '<h6>First Dam</h6>'+
-      '<div class="info-window-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada aliquam nunc.</div>'+
+      '<div class="info-window-desc"></div>'+
       '<div class="info-window-link"><a href="#" class="grey-link with-underline">Click Here</a></div>'+
       '</div>';
 
